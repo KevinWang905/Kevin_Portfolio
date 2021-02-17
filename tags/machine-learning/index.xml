@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Kevin Wang&#39;s Portfolio</title>
+    <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Kevin Wang&#39;s Portfolio</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Variational Autoencoders for Dimensionality Reduction in Radiomics</title>
+      <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/artificial-intelligence/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/artificial-intelligence/</guid>
+      <description>&lt;p&gt;fff&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

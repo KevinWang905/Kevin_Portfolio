@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>human on Kevin Wang&#39;s Portfolio</title>
+    <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/human/</link>
+    <description>Recent content in human on Kevin Wang&#39;s Portfolio</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/human/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recreational Clusters in Toronto</title>
+      <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/skin-cancer-ai/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/skin-cancer-ai/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;Toronto_skyline.jpg&#34; alt=&#34;alt text&#34; title=&#34;Toronto Skyline&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;toronto-recreation-clusters&#34;&gt;Toronto Recreation Clusters&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As the provincial capital of Ontario, Toronto is a prominent hub for its residents as well as the millions of tourists that visit per year. From nightlife to shopping to the arts, every corner of Toronto is packed with sites to visit and scenery to enjoy.&lt;/p&gt;
+&lt;p&gt;Toronto is a city full of exploration for tourists and opportunity for the entrepreneur. Due to the large amount of existing establishments, it may be difficult for an entrepreneur to decide on where to base their business. Where should they build a shopping center? A bar? What about a gym? On the other hand, a tourist only has a limited time to enjoy the city. Which districts should they visit based on their interests?&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;To address this issue, I will mainly use the foursquare api. First, I will determine the districts of Toronto by scraping Wikipedia. From these determined districts, I will use their longitude and latitude to search for venues within a 500m radius. Using the category of the found venues, I plan to cluster the districts of Toronto and visualize them in an interactive map.&lt;/p&gt;
+&lt;h3 id=&#34;libraries&#34;&gt;Libraries&lt;/h3&gt;
+&lt;p&gt;This project required the use of a few libraries.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Folium&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Folium is a library used to generate interactive maps. This will be used to visualize the neighbourhood locations in Toronto as well as the final clusters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Beautiful Soup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Beautiful soup is a library used to scrape websites. This will be used to scrape wikipedia for the postal codes of the Toronto neighbourhoods.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;NumPy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;NumPy is a libary used to handle data in a vectorized manner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Pandas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pandas is a library used for data analysis. This will be used to create dataframes for the data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Matplotlib&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Matplotlib is a library used for creating static, animated, and interactive visualizations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sklearn&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sklearn is a library used for machine learning. This will be used to cluster the neighbourhoods.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;methodology&#34;&gt;Methodology&lt;/h2&gt;
+&lt;h3 id=&#34;scraping-wikipedia&#34;&gt;Scraping Wikipedia&lt;/h3&gt;
+&lt;p&gt;Using the BeautifulSoup library, the wikipedia page for &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M&#34;&gt;Canadian postal codes starting with M&lt;/a&gt; was scraped for information on postal codes, boroughs, and neighbourhoods. This information was used in conjunction with a list of longitudes and latitudes of said codes to create a dataframe of the neighbourhoods and their coordinates. The head of this dataframe is pictured below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Long_lat.jpg&#34; alt=&#34;alt text&#34; title=&#34;Toronto Coordinates&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;finding-venues&#34;&gt;Finding Venues&lt;/h3&gt;
+&lt;p&gt;After isolating the boroughs in Toronto, the Foursquare api was used to find the types of venues present in each neighbourhood. The function getNearbyVenues_Overall was created to find the number of each type of venue present in each neighbourhood.&lt;/p&gt;
+&lt;p&gt;This function was used for each neighbourhood and results in the following dataframe.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Venues.JPG&#34; alt=&#34;alt text&#34; title=&#34;Toronto Venues&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This dataframe was visualized with a bar graph.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;bar1.JPG&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It is apparent that event venues are considerably more rare and not present in the majority of neighbourhoods. Therefore, due to their low number, the event venue category will be removed from the analysis. The resulting dataset is visualized in the bar graph below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Bar2.JPG&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;clustering&#34;&gt;Clustering&lt;/h3&gt;
+&lt;p&gt;Using the KMeans function from the SkLearn library, the Toronto neighbourhoods were clustered with a k of 2 to 30. For each of these sets of clusters, the inertia and silhouette score was calculated and graphed. This allowed the use of the elbow method to determine the optimal number of clusters: 5.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;elbow.JPG&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Clustering the neighbourhoods into 5 clusters yeilded the following cluster distribution. The venue categories used were: Arts and Entertainment, Nighlife, Outdoors and Recreations, and Shops and Services.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;cluster_graphs.JPG&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;These clusters were then plotted using folium onto a map of Toronto.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;clusters.JPG&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Upon inspection, &lt;strong&gt;Clusters 0 and 1&lt;/strong&gt; are quite similar, with only a difference in the percentage of Arts and Entertainment. Looking at the map generated, this distinction does make sense as neighbourhoods in cluster 0 are located closer to downtown Toronto. As a tourist, these areas may be of note if nightlife is not a priority.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cluster 2&lt;/strong&gt; is noticably prominent, boasting a large percentage of venues categorized as Outdoors and Recreation. However, as a tourist, these neighbourhoods (Rosedale and Summerpark East) are residential neighbourhoods and therefore may not be very interesting to visit. As an entrepreneur, this area should be approached with caution&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cluster 3&lt;/strong&gt; has the highest percentage of venues classified as a shop or service. These areas may be of note to entrepreneurs due to their distance from downtown Toronto which can lead to lower property prices.&lt;/p&gt;
+&lt;p&gt;Finally, &lt;strong&gt;Cluster 4&lt;/strong&gt; is the most well rounded of clusters. It has an equal distribution of all 4 venue types. The neighbourhoods in this cluster are grouped in downtown Toronto. This cluster is recommended if tourists wish to spend an entire day exploring, as well as enjoy the nightlife offered. For entrepreneurs, though this area does see higher traffic than the other clusters, property prices here are also higher.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Further analysis would provide much more clarity for each cluster. The addition of property prices for each cluster would be beneficial to both entrepreneurs as well as people moving into the city. In each category of venue, there are additional types of venues. Therefore, for further clarity, each cluster can be grouped into subclusters based on venue type. Traffic to each cluster would also be useful for entrepreneurs looking to open a business. This traffic would include the amount of people visiting, mean income, and if possible, the percentage of money spent in each category of venue.&lt;/p&gt;
+&lt;p&gt;Overall, this analysis yeilded a promising foothold for further research. The most balanced neighbourhoods were in cluster 4, located in downtown Toronto. Moving further away from downtown, the other clusters generally had much fewer nighlife and arts and entertainment venues, but more outdoors, recreation, and shopping venues. The exception to this is cluster 0 which had fewer nighlife venues, but maintained the amount of arts and entertainment venues.&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

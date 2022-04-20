@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fluid dynamics on Kevin Wang&#39;s Portfolio</title>
+    <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/fluid-dynamics/</link>
+    <description>Recent content in fluid dynamics on Kevin Wang&#39;s Portfolio</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/fluid-dynamics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hemodynamic Optimization with Novel Surgical Method</title>
+      <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/fontan-surgery-revision/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/fontan-surgery-revision/</guid>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Balanced hepatic flow distribution (HFD) into pulmonary arteries (PA) is a key outcome variable in Fontan physiology to prevent pulmonary arteriovenous malformation. A convergent total cavopulmonary connection (CCPC) is a novel method of converging the superior/inferior vena (SVC/IVC) cava flows to manipulate and balance HFD; however, the influence of geometry has not been characterized. In this study, we investigated variations in CCPC with computational fluid dynamics (CFD) to determine its ability to control HFD.&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;Four cardiac magnetic resonance imaging datasets of Fontans were included. The Fontan was segmented and native conduit was removed. CCPC designs were created, with superior limb (connected to SVC) inserting into inferior limb (connected to IVC) at 5 angles along transverse plane (from 0° in AP to 60° in RAO). Both native and CCPC designs were evaluated by CFD under steady-state conditions, with SVC/IVC/outflow boundary conditions provided by phase contrast measurements.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;All four cases had a CCPC design with balanced HFD into pulmonary arteries (52±4% into left PA vs. 65±27% in native design). In
+general, changing the RAO angulation of superior limb insertion affected streaming of SVC flow into right PA, thereby adjusting hepatic flow from IVC into left PA.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In a CCPC design, HFD can be adjusted by the angulation of superior limb insertion. CCPC is a potential solution to controlling the balance of HFD in Fontan flow .&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

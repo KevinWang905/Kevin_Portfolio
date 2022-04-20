@@ -7,10 +7,41 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; {year}</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://KevinWang905.gituhb.io/Kevin_Portfolio/tags/human/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Co-Robotic Ultrasound Mammography</title>
+      <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/co-robotic-ultrasound-mammography/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/co-robotic-ultrasound-mammography/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Over 40 million screenings are performed each year and around 6 million of those tests result in a the patient being called back to the office for further screening.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Robotic system to autonomously move across the patient&amp;rsquo;s breasts after the X-Ray images are taken and acquire Ultrasound images of any regions of concern that may be present.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PlDYHuM19AU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In Line Holography</title>
+      <link>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/holograpm/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://KevinWang905.gituhb.io/Kevin_Portfolio/project/holograpm/</guid>
+      <description>&lt;p&gt;A hologram is a method of optical imagery, where, as opposed to a classic photograph which captures the intensities of an object, a hologram captures the intensities and phase of an object. That is to say, a hologram captures information regarding the entire object, and can thus reconstruct a true 3D representation of that object.&lt;/p&gt;
+&lt;p&gt;The goal of this project is to construct an in line holographic imaging setup and capture amplitude and phase information for an object. After this capture is complete, the hologram will be digitally reconstructed, and displayed on a monitor to illustrate multiple focal lengths with a single image capture.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Recreational Clusters in Toronto</title>
